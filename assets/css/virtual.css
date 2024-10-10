@@ -103,6 +103,18 @@ a:hover, a:active {
     color: #2184f5;
 }
 
+.img-place.wow.fadeInUp::before {
+    content: none; /* Removes the pseudo-element */
+  }  
+.img-place.wow.zoomIn::before{
+    content: none;
+}
+
+.img-place.wow.zoomIn{
+    width: auto;
+    height: auto;
+}
+
 /* Image Responsive */
 .img-place {
     position: relative;
@@ -114,7 +126,8 @@ a:hover, a:active {
 }
 
 .img-place > img {
-    width: 100%;height: auto;
+    width: 100%;
+    height: auto;
 }
 
 /* Overlay */
@@ -1049,18 +1062,25 @@ a:hover, a:active {
 .gridder {
     position: relative;
     display: block;
+    background: none;
 }
 
 .grid-item {
     display: block;
-    float: left;
+    float: right;
     margin: 16px 0;
     padding: 0 16px;
+    background: none;
+    height: auto;
+    width: 100%;
+
 }
 
 .grid-item,
 .grid-sizer {
     width: 100%;
+    background: none;
+
 }
 
 .grid-item img {
@@ -1071,9 +1091,9 @@ a:hover, a:active {
 .grid-item .img-place {
     display: block;
     margin: 0 auto;
-    width: 100%;
+    width: auto;
     max-width: 350px;
-    height: 100%;
+    height: auto;
     border-radius: 4px;
     overflow: hidden;
     cursor: pointer;
@@ -1118,45 +1138,45 @@ a:hover, a:active {
 
 /* Theme red */
 .theme-red .bg-theme {
-    background-color: #EF3724 !important;
+    background-color: #b4a685 !important;
 }
 
 .theme-red .fg-theme {
-    color: #EF3724 !important;
+    color: #b4a685 !important;
 }
 
 .theme-red .btn-theme {
-    background-color: #EF3724;
+    background-color: #b4a685;
     color: #fff;
 }
 
 .theme-red .btn-theme:hover {
-    background-color: #F04936;
+    background-color: #605847;
     color: #fff;
 }
 
 .theme-red .btn-theme:focus {
-    box-shadow: 0 0 0 3px #fff, 0 0 0 5px #EF3724;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 5px #b4a685;
 }
 
 .theme-red .btn-theme-outline {
-    color: #EF3724;
-    box-shadow: 0 0 0 2px #EF3724;
+    color: #b4a685;
+    box-shadow: 0 0 0 2px #b4a685;
 }
 
 .theme-red .btn-theme-outline:hover {
-    background-color: #EF3724;
+    background-color: #b4a685;
     color: #fff;
 }
 
 .theme-red .btn-theme-outline:focus {
-    background-color: #EF3724;
+    background-color: #b4a685;
     color: #fff;
-    box-shadow: 0 0 0 3px #fff, 0 0 0 5px #EF3724;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 5px #b4a685;
 }
 
 .theme-red .btn-fab {
-    background-color: #EF3724;
+    background-color: #b4a685;
     color: #fff;
 }
 
@@ -1166,15 +1186,15 @@ a:hover, a:active {
 }
 
 .theme-red .progress {
-    box-shadow: 0 0 0 2px #EF3724;
+    box-shadow: 0 0 0 2px #b4a685;
 }
 
 .theme-red .progress-bar {
-    background-color: #EF3724;
+    background-color: #b4a685;
 }
 
 .theme-red .theme-list li::before {
-    border-color: #EF3724;
+    border-color: #b4a685;
 }
 
 
